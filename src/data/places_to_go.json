@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "destination": "Golden Triangle",
+      "slug": "golden-triangle"
+    },
+    {
+      "id": 2,
+      "destination": "Goa",
+      "slug": "goa"
+    },
+    {
+      "id": 3,
+      "destination": "Kerala",
+      "slug": "kerala"
+    },
+    {
+      "id": 4,
+      "destination": "Rajasthan",
+      "slug": "rajasthan"
+    },
+    {
+      "id": 5,
+      "destination": "Himalayas",
+      "slug": "himalayas"
+    },
+    {
+      "id": 6,
+      "destination": "Varanasi",
+      "slug": "varanasi"
+    },
+    {
+      "id": 7,
+      "destination": "Mumbai",
+      "slug": "mumbai"
+    },
+    {
+      "id": 8,
+      "destination": "Taj Mahal",
+      "slug": "taj-mahal"
+    },
+    {
+      "id": 9,
+      "destination": "Kolkata",
+      "slug": "kolkata"
+    },
+    {
+      "id": 10,
+      "destination": "Andaman and Nicobar Islands",
+      "slug": "andaman-nicobar-islands"
+    }
+  ]
+}

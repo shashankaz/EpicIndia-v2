@@ -1,0 +1,93 @@
+.container {
+  padding: 70px;
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.container p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container .wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container .taj {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: "center";
+  gap: 10px;
+  border: 2px solid #004de8;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #004de8;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.container button:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #004de8;
+  color: #fff;
+}
+
+.container button:hover .arrow {
+  rotate: -45deg;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  .container h1 {
+    font-size: 27px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container button {
+    gap: 8px;
+    font-size: 16px;
+    padding: 9px 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 30px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container button {
+    gap: 8px;
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}

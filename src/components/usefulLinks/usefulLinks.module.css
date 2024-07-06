@@ -1,0 +1,85 @@
+.container {
+  padding: 70px;
+}
+
+.mainBox {
+  background-color: #e6edfc;
+  padding: 50px 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.verticalBox {
+  width: 45%;
+}
+
+.verticalBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.verticalBox ul li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.verticalBox ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.verticalBox ul li a:hover {
+  color: #00205b;
+}
+
+.header:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  .mainBox {
+    padding: 37px 30px;
+  }
+
+  .verticalBox ul {
+    gap: 16px;
+  }
+
+  .verticalBox ul li {
+    font-size: 15px;
+  }
+
+  .header {
+    font-size: 22.5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 30px;
+  }
+
+  .mainBox {
+    padding: 25px 20px;
+  }
+
+  .verticalBox ul {
+    gap: 12px;
+  }
+
+  .verticalBox ul li {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 21px;
+  }
+}

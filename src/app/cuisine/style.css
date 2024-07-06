@@ -1,0 +1,80 @@
+#container-pages {
+  padding: 70px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+#container-pages h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#container-pages #container-title {
+  padding: 30px 0 20px;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+#container-pages p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0 30px;
+}
+
+#container-link {
+  color: #0041b8;
+}
+
+#container-link:hover {
+  text-decoration: underline;
+}
+
+#container-header {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#container-header #container-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  #container-pages {
+    padding: 50px;
+  }
+
+  #container-pages h1 {
+    font-size: 27px;
+  }
+
+  #container-pages #container-title {
+    padding: 27px 0 17px;
+    font-size: 32px;
+  }
+
+  #container-pages p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #container-pages {
+    padding: 30px;
+  }
+
+  #container-pages h1 {
+    font-size: 24px;
+  }
+
+  #container-pages #container-title {
+    padding: 25px 0 15px;
+    font-size: 30px;
+  }
+
+  #container-pages p {
+    font-size: 14px;
+  }
+}

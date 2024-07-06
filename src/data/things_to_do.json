@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "activity": "Taj Mahal Visit",
+      "slug": "taj-mahal-visit"
+    },
+    {
+      "id": 2,
+      "activity": "Backwater Cruise in Kerala",
+      "slug": "backwater-cruise-kerala"
+    },
+    {
+      "id": 3,
+      "activity": "Trekking in the Himalayas",
+      "slug": "trekking-himalayas"
+    },
+    {
+      "id": 4,
+      "activity": "Beach Relaxation in Goa",
+      "slug": "beach-relaxation-goa"
+    },
+    {
+      "id": 5,
+      "activity": "Jaipur City Tour",
+      "slug": "jaipur-city-tour"
+    },
+    {
+      "id": 6,
+      "activity": "Wildlife Safari",
+      "slug": "wildlife-safari"
+    },
+    {
+      "id": 7,
+      "activity": "Yoga and Meditation in Rishikesh",
+      "slug": "yoga-meditation-rishikesh"
+    },
+    {
+      "id": 8,
+      "activity": "Cultural Shows and Dance Performances",
+      "slug": "cultural-shows-dance-performances"
+    },
+    {
+      "id": 9,
+      "activity": "Cuisine Exploration",
+      "slug": "cuisine-exploration"
+    },
+    {
+      "id": 10,
+      "activity": "Shopping",
+      "slug": "shopping"
+    }
+  ]
+}

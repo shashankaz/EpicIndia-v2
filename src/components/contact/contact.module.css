@@ -1,0 +1,135 @@
+.container {
+  padding: 70px;
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.container p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form {
+  width: 500px;
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  resize: none;
+}
+
+.btn {
+  border: 2px solid #004de8;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #004de8;
+  background-color: #fff;
+  padding: 12px 20px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #004de8;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  .container h1 {
+    font-size: 26px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  .form > form {
+    gap: 15px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 30px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form > form {
+    gap: 10px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
