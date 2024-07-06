@@ -1,6 +1,6 @@
 "use client";
 
-import Hero from "@/components/hero/hero";
+import Hero from "@/components/hero/Hero";
 import Activities from "@/components/activities/Activities";
 import Trip from "@/components/trip/Trip";
 import UsefulLinks from "@/components/usefulLinks/UsefulLinks";
