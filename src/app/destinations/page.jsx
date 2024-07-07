@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import styles from "./style.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const page = () => {
   return (
     <div>
-      <div id="container-pages">
-        <div id="container-header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Image
-            id="container-image"
+            className={styles.image}
             src="/destinations.jpg"
             width={1000}
             height={1000}
@@ -21,8 +21,8 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div id="container-body">
-          <h1 id="container-title">
+        <div className={styles.body}>
+          <h1 className={styles.title}>
             Exploring India&apos;s Diverse and Enchanting Destinations{" "}
           </h1>
 
@@ -39,7 +39,7 @@ const page = () => {
               and rich tapestry of experiences.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 1. The Himalayas: Majestic Peaks and Spiritual Retreats
               </h1>
             </Link>
@@ -56,7 +56,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 2. Goa: Beach Bliss and Portuguese Heritage
               </h1>
             </Link>
@@ -73,7 +73,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 3. Rajasthan: Land of Kings and Desert Mystique
               </h1>
             </Link>
@@ -91,7 +91,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 4. Kerala: Backwaters and Ayurvedic Retreats
               </h1>
             </Link>
@@ -109,7 +109,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 5. Varanasi: Spiritual Capital on the Banks of the Ganges
               </h1>
             </Link>
@@ -127,7 +127,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 6. Agra: Iconic Monuments and Mughal Splendor
               </h1>
             </Link>
@@ -144,7 +144,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 7. Andaman and Nicobar Islands: Pristine Beaches and Marine
                 Wonders
               </h1>

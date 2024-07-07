@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import styles from "./style.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const page = () => {
   return (
     <div>
-      <div id="container-pages">
-        <div id="container-header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Image
-            id="container-image"
+            className={styles.image}
             src="/festivals.jpg"
             width={1000}
             height={1000}
@@ -21,8 +21,8 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div id="container-body">
-          <h1 id="container-title">
+        <div className={styles.body}>
+          <h1 className={styles.title}>
             India&apos;s Festivals: A Tapestry of Culture and Celebration
           </h1>
 
@@ -40,7 +40,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">Diwali - The Festival of Lights</h1>
+              <h1 className={styles.link}>Diwali - The Festival of Lights</h1>
             </Link>
 
             <p>
@@ -68,7 +68,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">Holi - The Festival of Colors</h1>
+              <h1 className={styles.link}>Holi - The Festival of Colors</h1>
             </Link>
 
             <p>
@@ -96,7 +96,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 East Indian Flavors: A Fusion of Tradition and Innovation
               </h1>
             </Link>
@@ -109,7 +109,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Eid-ul-Fitr - Celebrating the End of Ramadan
               </h1>
             </Link>
@@ -137,7 +137,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Navratri - Worshiping the Divine Feminine
               </h1>
             </Link>
@@ -164,7 +164,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Christmas - Spreading Joy and Goodwill
               </h1>
             </Link>
@@ -192,7 +192,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Ganesh Chaturthi - Honoring the Elephant-Headed God
               </h1>
             </Link>
@@ -218,7 +218,9 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">Onam - Kerala&apos;s Harvest Festival</h1>
+              <h1 className={styles.link}>
+                Onam - Kerala&apos;s Harvest Festival
+              </h1>
             </Link>
 
             <p>

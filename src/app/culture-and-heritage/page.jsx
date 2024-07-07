@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import styles from "./style.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const page = () => {
   return (
     <div>
-      <div id="container-pages">
-        <div id="container-header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Image
-            id="container-image"
+            className={styles.image}
             src="/culture.jpg"
             width={1000}
             height={1000}
@@ -21,9 +21,9 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div id="container-body">
-          <h1 id="container-title">
-            India’s Cultural and Heritage Wealth: A Tapestry of Timeless
+        <div className={styles.body}>
+          <h1 className={styles.title}>
+            India&apos;s Cultural and Heritage Wealth: A Tapestry of Timeless
             Diversity
           </h1>
 
@@ -39,7 +39,7 @@ const page = () => {
               the world for centuries.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Diversity and Unity: The Essence of India
               </h1>
             </Link>
@@ -55,7 +55,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Architectural Marvels: Chronicles of History
               </h1>
             </Link>
@@ -71,7 +71,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Cultural Expressions: Dance, Music, and Theater
               </h1>
             </Link>
@@ -87,7 +87,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Gastronomic Delights: A Culinary Odyssey
               </h1>
             </Link>
@@ -103,7 +103,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Festivals and Celebrations: A Tapestry of Colors and Rituals
               </h1>
             </Link>
@@ -119,7 +119,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Traditional Crafts: Artistry and Heritage
               </h1>
             </Link>
@@ -135,7 +135,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Spiritual Heritage: Pathways to Enlightenment
               </h1>
             </Link>
@@ -151,7 +151,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Modern Influences: Bridging Tradition and Innovation
               </h1>
             </Link>
@@ -167,7 +167,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Preserving Heritage: A Collective Responsibility
               </h1>
             </Link>

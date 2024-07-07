@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import styles from "./style.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const page = () => {
   return (
     <div>
-      <div id="container-pages">
-        <div id="container-header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Image
-            id="container-image"
+            className={styles.image}
             src="/cuisine.jpg"
             width={1000}
             height={1000}
@@ -21,8 +21,8 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div id="container-body">
-          <h1 id="container-title">
+        <div className={styles.body}>
+          <h1 className={styles.title}>
             Exploring the Rich Tapestry of Flavors in Indian Cuisine
           </h1>
 
@@ -37,7 +37,7 @@ const page = () => {
               cuisines from different regions of India.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 North Indian Cuisine: A Symphony of Spices and Rich Flavors
               </h1>
             </Link>
@@ -71,7 +71,7 @@ const page = () => {
               dish that pairs well with Naan or Rice.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 South Indian Delicacies: Light and Flavorful Creations
               </h1>
             </Link>
@@ -103,7 +103,7 @@ const page = () => {
               seafood and aromatic spices.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 East Indian Flavors: A Fusion of Tradition and Innovation
               </h1>
             </Link>
@@ -127,7 +127,7 @@ const page = () => {
               region&apos;s expertise in dessert making.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 West Indian Gastronomy: Diversity and Rich Heritage
               </h1>
             </Link>
@@ -160,7 +160,7 @@ const page = () => {
               and depth to Rajasthani dishes.
             </p>
             <Link href={"/"}>
-              <h1 id="container-link">
+              <h1 className={styles.link}>
                 Street Food Extravaganza: A Culinary Adventure on Every Corner
               </h1>
             </Link>

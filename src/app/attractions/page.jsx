@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "./style.css";
+import styles from "./style.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const page = () => {
   return (
     <div>
-      <div id="container-pages">
-        <div id="container-header">
+      <div className={styles.container}>
+        <div className={styles.header}>
           <Image
-            id="container-image"
+            className={styles.image}
             src="/attractions.jpg"
             width={1000}
             height={1000}
@@ -21,8 +21,8 @@ const page = () => {
             quality={100}
           />
         </div>
-        <div id="container-body">
-          <h1 id="container-title">
+        <div className={styles.body}>
+          <h1 className={styles.title}>
             Exploring India: A Journey Through Its Diverse Attractions{" "}
           </h1>
 
@@ -40,7 +40,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">1. The Iconic Taj Mahal: </h1>
+              <h1 className={styles.link}>1. The Iconic Taj Mahal: </h1>
             </Link>
 
             <p>
@@ -63,7 +63,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">2. Spiritual Journeys </h1>
+              <h1 className={styles.link}>2. Spiritual Journeys </h1>
             </Link>
 
             <p>
@@ -97,7 +97,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">3. Wildlife Encounters </h1>
+              <h1 className={styles.link}>3. Wildlife Encounters </h1>
             </Link>
 
             <p>
@@ -123,7 +123,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">4. Cultural Extravaganza: </h1>
+              <h1 className={styles.link}>4. Cultural Extravaganza: </h1>
             </Link>
 
             <p>
@@ -148,7 +148,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">5. Scenic Landscapes: </h1>
+              <h1 className={styles.link}>5. Scenic Landscapes: </h1>
             </Link>
 
             <p>
@@ -173,7 +173,7 @@ const page = () => {
             </p>
 
             <Link href={"/"}>
-              <h1 id="container-link">6. Culinary Delights:</h1>
+              <h1 className={styles.link}>6. Culinary Delights:</h1>
             </Link>
 
             <p>
