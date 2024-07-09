@@ -2,6 +2,7 @@
   padding: 70px;
   max-width: 800px;
   margin-inline: auto;
+  margin-top: 70px;
 }
 
 .container h1 {
@@ -44,6 +45,7 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 50px;
+    margin-top: 60px;
   }
 
   .container h1 {
@@ -63,6 +65,7 @@
 @media screen and (max-width: 425px) {
   .container {
     padding: 30px;
+    margin-top: 50px;
   }
 
   .container h1 {

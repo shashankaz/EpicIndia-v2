@@ -7,19 +7,20 @@
   overflow: hidden;
   height: 300px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
   transition: transform 0.5s ease;
+  transform: scale(1.1);
 }
 
 .image:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .container .title {

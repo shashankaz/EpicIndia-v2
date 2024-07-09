@@ -23,7 +23,7 @@ const page = () => {
         </div>
         <div className={styles.body}>
           <h1 className={styles.title}>
-            Exploring India: A Journey Through Its Diverse Attractions{" "}
+            Exploring India: A Journey Through Its Diverse Attractions
           </h1>
 
           <Fade cascade damping={0.01} triggerOnce>

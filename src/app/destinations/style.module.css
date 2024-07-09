@@ -2,6 +2,7 @@
   padding: 70px;
   max-width: 800px;
   margin-inline: auto;
+  margin-top: 70px;
 }
 
 .container h1 {
@@ -41,51 +42,10 @@
   object-fit: cover;
 }
 
-/**/
-
-.container-destination {
-  padding: 70px;
-  max-width: 800px;
-  margin-inline: auto;
-}
-
-.main-destination h1 {
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.main-destination .title-destination {
-  padding: 30px 0 20px;
-  font-size: 35px;
-  font-weight: 800;
-}
-
-.main-destination p {
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 0 30px;
-}
-
-.main-destination h3 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.main-destination .header-destination {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-
-.main-destination .destination {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 @media screen and (max-width: 768px) {
   .container {
     padding: 50px;
+    margin-top: 60px;
   }
 
   .container h1 {
@@ -99,33 +59,13 @@
 
   .container p {
     font-size: 16px;
-  }
-
-  .container-destination {
-    padding: 50px;
-  }
-
-  .container-destination h1 {
-    font-size: 27px;
-  }
-
-  .container-destination .title-destination {
-    padding: 27px 0 17px;
-    font-size: 32px;
-  }
-
-  .container-destination p {
-    font-size: 16px;
-  }
-
-  .main-destination h3 {
-    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .container {
     padding: 30px;
+    margin-top: 50px;
   }
 
   .container h1 {
@@ -139,26 +79,5 @@
 
   .container p {
     font-size: 14px;
-  }
-
-  .container-destination {
-    padding: 30px;
-  }
-
-  .container-destination h1 {
-    font-size: 24px;
-  }
-
-  .container-destination .title-destination {
-    padding: 25px 0 15px;
-    font-size: 30px;
-  }
-
-  .container-destination p {
-    font-size: 14px;
-  }
-
-  .main-destination h3 {
-    font-size: 16px;
   }
 }

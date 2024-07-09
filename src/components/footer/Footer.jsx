@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,61 +7,65 @@ import styles from "./footer.module.css";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
 
-const Footer = () => {
-  const menuItems = [
-    {
-      header: "Explore India",
-      links: [
-        { href: "/destinations", label: "Destinations" },
-        { href: "/attractions", label: "Attractions" },
-        { href: "/culture-and-heritage", label: "Culture and Heritage" },
-        { href: "/cuisine", label: "Cuisine" },
-        { href: "/festivals", label: "Festivals" },
-      ],
-    },
-    {
-      header: "Plan Your Trip",
-      links: [
-        { href: "/guide", label: "Travel Guide" },
-        { href: "/itineraries", label: "Itineraries" },
-        { href: "/accommodations", label: "Accommodations" },
-        { href: "/transportation", label: "Transportation" },
-        { href: "/visa", label: "Visa Information" },
-      ],
-    },
-    {
-      header: "Resources",
-      links: [
-        { href: "/faqs", label: "FAQs" },
-        { href: "/guide", label: "Travel Guides" },
-        { href: "/terms", label: "Terms of Use" },
-        { href: "/privacy", label: "Privacy Policy" },
-        {
-          href: "/sustainability-initiatives",
-          label: "Sustainability Initiatives",
-        },
-      ],
-    },
-  ];
+const menuItems = [
+  {
+    header: "Explore India",
+    links: [
+      { href: "/destinations", label: "Destinations" },
+      { href: "/attractions", label: "Attractions" },
+      { href: "/culture-and-heritage", label: "Culture and Heritage" },
+      { href: "/cuisine", label: "Cuisine" },
+      { href: "/festivals", label: "Festivals" },
+    ],
+  },
+  {
+    header: "Plan Your Trip",
+    links: [
+      { href: "/guide", label: "Travel Guide" },
+      { href: "/itineraries", label: "Itineraries" },
+      { href: "/accommodations", label: "Accommodations" },
+      { href: "/transportation", label: "Transportation" },
+      { href: "/visa", label: "Visa Information" },
+    ],
+  },
+  {
+    header: "Resources",
+    links: [
+      { href: "/faqs", label: "FAQs" },
+      { href: "/guide", label: "Travel Guides" },
+      { href: "/terms", label: "Terms of Use" },
+      { href: "/privacy", label: "Privacy Policy" },
+      {
+        href: "/sustainability-initiatives",
+        label: "Sustainability Initiatives",
+      },
+    ],
+  },
+];
 
-  const socialLinks = [
-    {
-      href: "https://www.facebook.com/",
-      icon: <FaFacebook />,
-      label: "Facebook",
-    },
-    { href: "https://twitter.com/", icon: <FaTwitter />, label: "Twitter" },
-    {
-      href: "https://www.instagram.com/",
-      icon: <FaInstagram />,
-      label: "Instagram",
-    },
-    { href: "https://www.youtube.com/", icon: <FaYoutube />, label: "YouTube" },
-  ];
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/",
+    icon: <FaFacebook />,
+    label: "Facebook",
+  },
+  { href: "https://twitter.com/", icon: <FaTwitter />, label: "Twitter" },
+  {
+    href: "https://www.instagram.com/",
+    icon: <FaInstagram />,
+    label: "Instagram",
+  },
+  { href: "https://www.youtube.com/", icon: <FaYoutube />, label: "YouTube" },
+];
+
+const Footer = () => {
+  const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className={styles.container}>
-      <div className={styles.top}>
+      <div className={styles.top} onClick={backToTop}>
         <IoIosArrowUp />
         Back to top
       </div>

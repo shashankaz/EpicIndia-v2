@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./hero.module.css";
 
 const Hero = () => {
@@ -17,12 +16,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-<Image
-  className={styles.image}
-  src="/cover.jpg"
-  width={1000}
-  height={1000}
-  alt="Picture of India Gate in New Delhi, India"
-  quality={100}
-/>;

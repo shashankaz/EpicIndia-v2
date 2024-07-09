@@ -1,0 +1,90 @@
+.wrapper {
+  padding: 70px;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper h2 {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.wrapper button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #00205b;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.wrapper a {
+  color: #00205b;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.orDivider::before,
+.orDivider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.orDivider:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.orDivider:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.orDivider span {
+  padding: 0 10px;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 30px;
+    margin-top: 50px;
+  }
+}

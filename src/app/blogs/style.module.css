@@ -6,8 +6,23 @@
 }
 
 .container h1 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 800;
+}
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.container h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.container p {
+  padding: 10px 0 30px;
 }
 
 .container .title {

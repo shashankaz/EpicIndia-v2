@@ -10,8 +10,24 @@ import Blog from "@/components/blog/Blog";
 import FAQ from "@/components/faq/FAQ";
 import Contact from "@/components/contact/Contact";
 import { Fade } from "react-awesome-reveal";
+import { useEffect, useState } from "react";
+import { auth } from "@/lib/firebase";
 
 export default function Home() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <>
       <Hero />
